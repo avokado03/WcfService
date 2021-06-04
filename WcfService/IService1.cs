@@ -54,35 +54,35 @@ namespace WcfService
     [DataContract]
     public class Customer
     {
-        [DataMember]
+        [DataMember(Order = 1)]
         public int Id { get; set; }
 
-        [DataMember]
+        [DataMember(Order = 2)]
         public string Name { get; set; }
 
-        [DataMember]
+        [DataMember(Order = 3)]
         public string Surname { get; set; }
 
-        [DataMember]
+        [DataMember(Order = 4)]
         public int YearOfBirth { get; set; }
     }
 
     [DataContract]
     public class Order
     {
-        [DataMember]
+        [DataMember(Order = 1)]
         public int Id { get; set; }
 
-        [DataMember]
+        [DataMember(Order = 2)]
         public string Title { get; set; }
         
-        [DataMember]
+        [DataMember(Order = 3)]
         public int CustomerId { get; set; }
 
-        [DataMember]
+        [DataMember(Order = 4)]
         public decimal Price { get; set; }
 
-        [DataMember]
+        [DataMember(Order = 5)]
         public int Count { get; set; }
     }
 }

@@ -2,11 +2,6 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.ServiceModel.Web;
-using System.Text;
 
 namespace WcfService
 {
@@ -45,7 +40,7 @@ namespace WcfService
             var orderList = new List<Order>();
             using (var connection = new SqlConnection(_connectionString))
             {
-                var orderCommand = new SqlCommand("SELECT * FROM Orders WHERE CustomerId = @CustomerId");
+                var orderCommand = new SqlCommand("SELECT * FROM Orders WHERE CustomerId = @CustomerId", connection);
                 orderCommand.Parameters.Add(new SqlParameter("@CustomerId", customerId));
                 connection.Open();
                 var reader = orderCommand.ExecuteReader();
