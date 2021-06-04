@@ -5,11 +5,11 @@ namespace WebApplication1
 {
     public partial class WcfTest : Page
     {
-        private CustomerService.Service1Client _client;
+        private MyService.CustomerServiceClient _client;
 
         public WcfTest()
         {
-            _client = new CustomerService.Service1Client();
+            _client = new MyService.CustomerServiceClient();
         }
 
         protected void Page_Load(object sender, EventArgs e)

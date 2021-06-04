@@ -69,35 +69,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CustomerService\Service1.disco" />
-    <None Include="Connected Services\CustomerService\configuration91.svcinfo" />
-    <None Include="Connected Services\CustomerService\configuration.svcinfo" />
-    <None Include="Connected Services\CustomerService\Reference.svcmap">
+    <None Include="Connected Services\MyService\CustomerService.disco" />
+    <None Include="Connected Services\MyService\configuration91.svcinfo" />
+    <None Include="Connected Services\MyService\configuration.svcinfo" />
+    <None Include="Connected Services\MyService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Global.asax" />
     <Content Include="WcfTest.aspx" />
     <Content Include="Web.config" />
-    <None Include="Connected Services\CustomerService\Service1.wsdl" />
-    <None Include="Connected Services\CustomerService\Service11.xsd">
+    <None Include="Connected Services\MyService\CustomerService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\CustomerService\Service12.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="Connected Services\CustomerService\WebApplication1.CustomerService.CompositeType.datasource">
+    <Content Include="Connected Services\MyService\WebApplication1.MyService.Customer.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\CustomerService\WebApplication1.CustomerService.Customer.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\CustomerService\WebApplication1.CustomerService.Order.datasource">
+    <Content Include="Connected Services\MyService\WebApplication1.MyService.Order.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\CustomerService\Reference.cs">
+    <Compile Include="Connected Services\MyService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -115,9 +108,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CustomerService\Service1.xsd">
+    <None Include="Connected Services\MyService\CustomerService.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\MyService\CustomerService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MyService\Service1.wsdl" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -134,7 +131,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\CustomerService\" />
+    <WCFMetadataStorage Include="Connected Services\MyService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
