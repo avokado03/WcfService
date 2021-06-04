@@ -7,11 +7,13 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication1
 {
-    public partial class WcfTest : System.Web.UI.Page
+    public partial class WcfTest : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            var client = new CustomerService.Service1Client();
+            CustomersGridView.DataSource = client.GetCustomers();
+            CustomersGridView.DataBind();
         }
     }
 }

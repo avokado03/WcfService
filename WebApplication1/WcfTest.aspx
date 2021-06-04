@@ -9,9 +9,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            Hello!
-        </div>
+         <asp:GridView ID="CustomersGridView" runat="server"></asp:GridView>
     </form>
 </body>
 </html>
